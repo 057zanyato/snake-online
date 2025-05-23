@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Дуэль Змеек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Онлайн Дуэль Змеек</h1>
+  <div id="menu">
+    <button id="createRoom">Создать комнату</button>
+    <input type="text" id="inviteLink" readonly placeholder="Ссылка на приглашение появится здесь">
+    <input type="text" id="joinRoomId" placeholder="Вставьте код комнаты">
+    <button id="joinRoom">Присоединиться</button>
+  </div>
+  <div id="game" style="display:none;">
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <p id="status"></p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
+<!-- ...внутри <body> -->
+  <h1>Онлайн Дуэль Змеек</h1>
+  <div id="menu">
+    <button id="createRoom">Создать комнату</button>
+    <input type="text" id="inviteLink" readonly placeholder="Ссылка на приглашение появится здесь">
+    <input type="text" id="joinRoomId" placeholder="Вставьте код комнаты">
+    <button id="joinRoom">Присоединиться</button>
+    <div>
+      <label>Код комнаты: <span id="roomIdDisplay" style="font-weight:bold"></span></label>
+    </div>
+  </div>
+  <div id="game" style="display:none;">
+    <div>
+      <label>Код комнаты: <span id="roomIdInGame" style="font-weight:bold"></span></label>
+    </div>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <p id="status"></p>
+  </div>
+<!-- ... -->

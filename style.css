@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e6f4ea;
+  text-align: center;
+}
+#menu {
+  margin: 20px;
+}
+#gameCanvas {
+  border: 2px solid #444;
+  background: #fff;
+}
+#status {
+  font-size: 1.2em;
+  color: #0b4d1a;
+  margin: 10px;
+}
+input[readonly] {
+  width: 350px;
+  margin: 5px;
+  padding: 5px;
+}
